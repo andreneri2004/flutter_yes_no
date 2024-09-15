@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD:lib/presentation/src/screens/chat/chat.dart
 import 'package:provider/provider.dart';
 import 'package:yes_no/domain/entities/message.dart';
 import 'package:yes_no/presentation/providers/chat_provider.dart';
 import 'package:yes_no/presentation/widgets/chat/my_message_bubble.dart';
 import 'package:yes_no/presentation/widgets/chat/other_message_bubble.dart';
 import 'package:yes_no/presentation/widgets/shared/message_field_box.dart';
+=======
+import 'package:yes_no/widgets/chat/my_message_bubble.dart';
+import 'package:yes_no/widgets/chat/other_message_bubble.dart';
+import 'package:yes_no/widgets/shared/message_field_box.dart';
+>>>>>>> refs/remotes/origin/main:lib/src/screens/chat/chat.dart
 
 class Chat extends StatelessWidget {
   const Chat({super.key});
@@ -40,7 +46,11 @@ class _ChatView extends StatelessWidget {
           children: [
             Expanded(
                 child: ListView.builder(
+<<<<<<< HEAD:lib/presentation/src/screens/chat/chat.dart
               itemCount: chatProvider.messageList.length,
+=======
+              itemCount: 10,
+>>>>>>> refs/remotes/origin/main:lib/src/screens/chat/chat.dart
               itemBuilder: (context, index) {
                 final message = chatProvider.messageList[index];
                 return (message.fromWho == FromWho.me)
@@ -48,9 +58,13 @@ class _ChatView extends StatelessWidget {
                     : const OtherMessageBubble();
               },
             )),
+<<<<<<< HEAD:lib/presentation/src/screens/chat/chat.dart
             MessageFieldBox(
               onValue: chatProvider.sendMensage,
             )
+=======
+            const MessageFieldBox()
+>>>>>>> refs/remotes/origin/main:lib/src/screens/chat/chat.dart
           ],
         ),
       ),
