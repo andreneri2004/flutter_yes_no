@@ -39,13 +39,6 @@ class _ImageBubble extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Image.network(
-<<<<<<< HEAD:lib/presentation/widgets/chat/other_message_bubble.dart
-=======
-        "https://yesno.wtf/assets/no/5-73e4adfe4da265a646fe517128bb5bf2.gif",
-        width: size.width * 0.7, // 70%
-        height: 150,
-        fit: BoxFit.cover,
->>>>>>> refs/remotes/origin/main:lib/widgets/chat/other_message_bubble.dart
         loadingBuilder: (context, child, loadingProgress) {
           if (loadingProgress == null) return child;
 
@@ -53,7 +46,6 @@ class _ImageBubble extends StatelessWidget {
             width: size.width * 0.7, // 70%
             height: 150,
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-<<<<<<< HEAD:lib/presentation/widgets/chat/other_message_bubble.dart
             child: const Text('Digitando...'),
           );
         },
@@ -61,11 +53,6 @@ class _ImageBubble extends StatelessWidget {
         height: 150,
         fit: BoxFit.cover,
         "https://yesno.wtf/assets/no/5-73e4adfe4da265a646fe517128bb5bf2.gif",
-=======
-            child: const Text('Carregando...'),
-          );
-        },
->>>>>>> refs/remotes/origin/main:lib/widgets/chat/other_message_bubble.dart
       ),
     );
   }

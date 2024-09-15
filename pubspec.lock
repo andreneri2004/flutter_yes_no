@@ -130,7 +130,6 @@ packages:
       sha256: bdb68674043280c3428e9ec998512fb681678676b3c54e773629ffe74419f8c7
       url: "https://pub.dev"
     source: hosted
-<<<<<<< HEAD
     version: "1.11.0"
   nested:
     dependency: transitive
@@ -140,9 +139,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
-=======
-    version: "1.15.0"
->>>>>>> refs/remotes/origin/main
   path:
     dependency: transitive
     description:
@@ -230,8 +226,4 @@ packages:
     version: "14.2.4"
 sdks:
   dart: ">=3.3.0 <4.0.0"
-<<<<<<< HEAD
   flutter: ">=1.16.0"
-=======
-  flutter: ">=3.18.0-18.0.pre.54"
->>>>>>> refs/remotes/origin/main
